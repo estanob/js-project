@@ -1,0 +1,17 @@
+.main-display {
+  display: flex;
+}
+
+.map-container {
+  height: 600px;
+  width: 100%;
+}
+
+#mapid {
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  z-index: 0;
+  height: 80vh;
+  width: 50vw;
+}
