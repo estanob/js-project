@@ -1,3 +1,13 @@
+.app-name {
+  font-family: Georgia sans-serif;
+  color: #006aff;
+  display: block;
+  padding-left: 50px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  align-items: center;
+}
+
 .main-display {
   display: flex;
 }
@@ -12,6 +22,6 @@
   justify-items: center;
   align-items: flex-start;
   z-index: 0;
-  height: 85vh;
+  height: 90vh;
   width: 40vw;
 }
