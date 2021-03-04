@@ -19,6 +19,18 @@
       <h1 class='app-name'>California Housing Prices</h1>
       <div class='data'>
         <h1>Data will go here</h1>
+        <div class="modal" id='modal-btn'>
+          <div class="modal-header">
+            <span class="close-btn">&times;</span>
+            <h1>I am the Header</h1>
+          </div>
+          <div class="modal-content">
+            <p>this is the text inside the modal</p>
+          </div>
+          <div class="modal-footer">
+            <h2>I am the Footer</h2>
+          </div>
+        </div>
         <p>Click on any house in this map to find out price history and current price!</p>
         <p>Interested in buying? Click here for our detailed financial planner</p>
       </div>
@@ -27,7 +39,10 @@
   <footer>
     <a href="http://www.github.com/estanob">Github</a>
     <div class='credits'>
-      <p>Map generated from <a href="https://leafletjs.com/">Leaflet.js</a></p>
+      <p>Map from <a href="https://leafletjs.com/">Leaflet.js</a> | 
+        House info from <a href="https://rapidapi.com/datascraper/api/realtor-com-real-estate">Rapid API:
+        Realtor.com</a>
+      </p>
     </div>
   </footer>
   <script src='./src/index.js'></script>

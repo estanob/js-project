@@ -33,3 +33,25 @@ newportFremont.bindPopup("<b>Move here!</b><br>Irvington District<br>Fremont, CA
 // sanDiegoMarker.bindPopup("<b>Move here!</b><br>San Diego, CA");
 // eurekaMarker.bindPopup("<b>Move here!</b><br>Eureka, CA");
 // bakersfieldMarker.bindPopup("<b>Move here!</b><br>Bakersfield, CA");
+
+
+
+
+
+let modalBtn = document.getElementById("modal-btn");
+let modal = document.querySelector(".modal");
+let closeBtn = document.querySelector(".close-btn");
+
+modalBtn.onclick = function(){
+  modal.style.display = "block";
+};
+
+closeBtn.onclick = function(){
+  modal.style.display = "none";
+};
+
+window.onclick = function(e){
+  if(e.target == modal){
+    modal.style.display = "none";
+  };
+};
