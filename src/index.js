@@ -7,8 +7,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   minZoom: 6,
 }).addTo(mymap);
 
+// let houses = [];
+
 //Bay Area Houses
 var newportFremont = L.marker([37.52173340285854, -121.95279523730277]).addTo(mymap); // 42760 Newport Drive, Fremont
+// houses.push(newportFremont)
 // var fremontMarker = L.marker([37.520078329568555, -121.97832852602005]).addTo(mymap); // 4938 Tenor Court, Fremont
 // var newarkMarker = L.marker([37.542459128973334, -122.05186665058136]).addTo(mymap); // 6792 Normandy Drive, Newark
 // var commHillMarker = L.marker([37.29464, -121.86944]).addTo(mymap); //459 Mill Pond Drive, San Jose
@@ -35,8 +38,11 @@ newportFremont.bindPopup("<b>Move here!</b><br>Irvington District<br>Fremont, CA
 // bakersfieldMarker.bindPopup("<b>Move here!</b><br>Bakersfield, CA");
 
 
-
-
+//later for making code dynamic
+newportFremont.addEventListener("click", () => {
+  console.log('hello');
+  // console.log(houses);
+})
 
 let modalBtn = document.getElementById("modal-btn");
 let modal = document.querySelector(".modal");
@@ -52,6 +58,6 @@ closeBtn.onclick = function(){
 
 window.onclick = function(e){
   if(e.target == modal){
-    modal.style.display = "none";
-  };
+    modal.style.display = "none"
+  }
 };

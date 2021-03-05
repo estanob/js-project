@@ -1,7 +1,7 @@
 {
   "name": "js-project",
   "version": "1.0.0",
-  "description": "## Live Site [House Map](#)",
+  "description": "Interactive map with housing data",
   "main": "config.js",
   "dependencies": {
     "unirest": "^0.6.0"
