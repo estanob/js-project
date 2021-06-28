@@ -27,28 +27,42 @@ mountainViewMarker.bindPopup("<b>Move here!</b><br> Mountain View, CA");
 commHillMarker.bindPopup("<b>Move here!</b><br>Communications Hill, <br> San Jose, CA");
 mpMarker.bindPopup("<b>Move here!</b><br>Menlo Park, CA")
 
+var losAngelesMap = L.map('losangelesmap').setView([33.95871283442466, -118.3094055656509], 9);
 
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+  maxZoom: 19,
+  minZoom: 9,
+}).addTo(losAngelesMap);
 
-//later for making code dynamic
-// newportFremont.addEventListener("click", () => {
-//   console.log('hello');
-//   // console.log(houses);
-// })
+var sanDiegoMap = L.map('sdmap').setView([32.723348633228696, -117.11090874710843], 11);
 
-// let modalBtn = document.getElementById("modal-btn");
-// let modal = document.querySelector(".modal");
-// let closeBtn = document.querySelector(".close-btn");
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+  maxZoom: 19,
+  minZoom: 9,
+}).addTo(sanDiegoMap);
 
-// modalBtn.onclick = function(){
-//   modal.style.display = "block";
-// };
+var sacMap = L.map('sacmap').setView([38.540640585229696, -121.41487712242126], 10);
 
-// closeBtn.onclick = function(){
-//   modal.style.display = "none";
-// };
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+  maxZoom: 19,
+  minZoom: 9,
+}).addTo(sacMap);
 
-// window.onclick = function(e){
-//   if(e.target == modal){
-//     modal.style.display = "none"
-//   }
-// };
+var northMap = L.map('northmap').setView([40.79548197675195, -124.1593133864593], 11);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+  maxZoom: 19,
+  minZoom: 9,
+}).addTo(northMap);
+
+var centralMap = L.map('centralcoastmap').setView([34.76864965410546,-120.24831571578979], 9);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+  maxZoom: 19,
+  minZoom: 9,
+}).addTo(centralMap);
